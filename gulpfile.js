@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 gulp.task("jshint", function() {
-    return gulp.src(["./demo/*.js"])
+    return gulp.src(["./vim/*.js"])
         .pipe(jshint())
         .pipe(jshint.reporter(jshintReporter));
 });
@@ -16,12 +16,12 @@ gulp.task("jshint", function() {
 
 gulp.task('browserify', function() {
 
-    return gulp.src(['./demo/demo.js'])
+    return gulp.src(['./vim/vim.js'])
         .pipe(browserify({
             debug : true,
             "fullPaths": true
         }))
-        .pipe(gulp.dest('./demo/build/'))
+        .pipe(gulp.dest('./vim/build/'))
         .on('end', livereload('.js'));
 
 });
@@ -38,7 +38,7 @@ var livereload = function (_file) {
 gulp.task('watch', function() {
     livereloadServer = require('gulp-livereload')();
 
-    gulp.watch(['./demo/**/*.js', './*.js'], ['build']);
+    gulp.watch(['./vim/**/*.js', './*.js'], ['build']);
 });
 
 

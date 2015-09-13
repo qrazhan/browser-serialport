@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Browser Serial Vim</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="build/vim.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Browser Serial Vim</h1>
+			<div id="settings" class="row">
+				<div class="col-sm-3">
+					<label for="portPath" class="control-label">Port Path:</label>
+					<select id="portPath" class="form-control"></select>
+				</div>
+				<div class="col-sm-3">
+					<label for="baudrate">Baud Rate:</label>
+					<select id="baudrate" class="form-control">
+						<option value="115200">115200</option>
+						<option value="57600">57600</option>
+						<option value="38400">38400</option>
+						<option value="19200">19200</option>
+						<option value="9600" selected>9600</option>
+						<option value="4800">4800</option>
+						<option value="2400">2400</option>
+						<option value="1800">1800</option>
+						<option value="1200">1200</option>
+						<option value="600">600</option>
+						<option value="300">300</option>
+						<option value="200">200</option>
+						<option value="150">150</option>
+						<option value="134">134</option>
+						<option value="110">110</option>
+						<option value="75">75</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+				<div class="col-sm-3">
+					<button id="connect" class="btn btn-primary">Connect</button>
+				</div>
+			</div>
+			<div id="connected-container">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class=""> </th>
+							<th class="">0</th>
+							<th class="">1</th>
+							<th class="">2</th>
+							<th class="">3</th>
+							<th class="">4</th>
+							<th class="">5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="" scope="row">0</th>
+							<th class="" id="00">A</th>
+							<th class="" id="01">B</th>
+							<th class="" id="02">C</th>
+							<th class="" id="03">D</th>
+							<th class="" id="04">E</th>
+							<th class="" id="05">F</th>
+						</tr>
+						<tr>
+							<th class="" scope="row">1</th>
+							<th class="" id="10">G</th>
+							<th class="" id="11">H</th>
+							<th class="" id="12">I</th>
+							<th class="" id="13">J</th>
+							<th class="" id="14">K</th>
+							<th class="" id="15">L</th>
+						</tr>
+						<tr>
+							<th class="" scope="row">2</th>
+							<th class="" id="20">M</th>
+							<th class="" id="21">N</th>
+							<th class="" id="22">O</th>
+							<th class="" id="23">P</th>
+							<th class="" id="24">Q</th>
+							<th class="" id="25">R</th>
+						</tr>
+						<tr>
+							<th class="" scope="row">3</th>
+							<th class="" id="30">S</th>
+							<th class="" id="31">T</th>
+							<th class="" id="32">U</th>
+							<th class="" id="33">V</th>
+							<th class="" id="34">W</th>
+							<th class="" id="35">X</th>
+						</tr>
+						<tr>
+							<th class="" scope="row">4</th>
+							<th class="" id="40">Y</th>
+							<th class="" id="41">Z</th>
+						</tr>
+					</tbody>
+				</table>
+				<div class="form-group">
+					<label for="movement">Amount to move:</label>
+					<input type="number" class="form-control" id="movement">
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<label for="output">Output:</label>
+						<textarea id="output" class="form-control" rows="10"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

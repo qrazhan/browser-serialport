@@ -1,3 +1,7 @@
+Modified to work as keyboard input with MBED serial for a project
+
+Original By [phated](https://github.com/phated)
+
 # browser-serialport
 
 Robots in the browser. Just like [node-serialport](https://npmjs.org/package/serialport) but for browser apps.
