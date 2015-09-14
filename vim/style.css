@@ -9,3 +9,63 @@ div.row {
 #connected-container {
 	display: none;
 }
+
+.menu_selected {
+	border: 2px solid black;
+}
+
+.big-menu-item {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display:inline-block;
+}
+.big-menu-item .text{
+    width: 75px; /*can be in percentage also.*/
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+}
+
+#space {
+	background: #ddd;
+	margin-left: 48%;
+	width: 125px;
+	height: 125px;
+}
+
+#space .text{
+	margin-left: 22px;
+}
+
+#big1 {
+	background: #90C3D4;
+	margin-left: 50%;
+	margin-top: 5%;
+}
+#big2 {
+	background: #A1D490;
+	margin-left: 20%;
+}
+#big3 {
+	background: #D4A190;
+	margin-left: 45%;
+}
+#big4 {
+	background: #D4CE90;
+	margin-left: 20%;
+	margin-top: 15%;
+}
+#big5 {
+	background: #D49099;
+	margin-left: 45%;
+	margin-top: 15%;
+}
+#big6 {
+	background: #C390D4;
+	margin-left: 50%;
+}
